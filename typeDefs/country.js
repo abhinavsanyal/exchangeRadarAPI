@@ -19,6 +19,7 @@ module.exports = gql`
   input createCountryInput {
     name: String!
     population: Int!
+    flag: String
     currencies: [currencyInput!]
   }
 
@@ -36,6 +37,7 @@ module.exports = gql`
   type Country {
     id: ID!
     name: String!
+    flag:String
     population: Int!
     currencies: [Currency!]
     exchangeRateToSEK: String

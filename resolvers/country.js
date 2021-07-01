@@ -69,7 +69,7 @@ module.exports = {
           const exhangeRate = latestConversionRateResponse.rates[`${code}`];
 
           // Create new country document to save ( without currencies )
-          const newCountryData = { name: input.name , population: input.population, exchangeRateToSEK: exhangeRate };
+          const newCountryData = { name: input.name , population: input.population, exchangeRateToSEK: exhangeRate, flag: input.flag  };
           const country = new Country({ ...newCountryData, user: user.id });
 
           // Push the currency id to  

@@ -7,6 +7,9 @@ const countrySchema = new mongoose.Schema(
       required: true,
       unique : true,
     },
+    flag: {
+      type: String,
+    },
     population: {
       type: Number,
       required: true,
