@@ -2,8 +2,8 @@ const { gql } = require("apollo-server-express");
 
 module.exports = gql`
   extend type Query {
-    getCountriesByName(name: String!): [Country!]
-    getAddedCountries(cursor: String, limit: Int): CountryFeed!
+    getCountriesByName(name: String!): [Country!] @rateLimit(limit: 30, duration: 60)
+    getAddedCountries(cursor: String, limit: Int): CountryFeed! 
   }
 
   type CountryFeed {
