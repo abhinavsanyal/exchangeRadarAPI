@@ -63,7 +63,7 @@ apolloServer.applyMiddleware({ app, path: "/anyfinExchangeRadar" });
 const PORT = process.env.PORT || 3000;
 
 app.use("/", (req, res, next) => {
-  res.send({ message: "Hello" });
+  res.send({ message: "Welcome to Exchange Radar API" });
 });
 
 const httpServer = app.listen(PORT, () => {
