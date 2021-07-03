@@ -5,7 +5,6 @@ const countrySchema = new mongoose.Schema(
     name: {
       type: String,
       required: true,
-      unique : true,
     },
     flag: {
       type: String,
