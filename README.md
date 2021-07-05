@@ -1,8 +1,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 A NodeJs GraphQL API for searching a country by name and adding them to an authenticated user's list to view and track current exchange rates.
 
 ### Built With
